@@ -14,9 +14,8 @@
             return row[4]
         });
         var labels = report.map(function (row) {
-            return [0];
+            return row[0];
         });
-        console.log(dataPointsOpen, dataPointsClose);
 
         var lineChartData = {
             labels: labels,
@@ -59,7 +58,7 @@
                             display: true,
                             position: "right",
                             id: "y-axis-2",
-                        }],
+                        }]
                     }
                 }
             });
